@@ -1,0 +1,150 @@
+﻿body {
+    background-attachment: fixed;
+    background: url('../imagenes/Logo_SG.png') no-repeat;
+    background-color: #333F48;
+    padding: 0;
+    margin: 0;
+}
+
+.tablaMaster {
+    width: 100%;
+    /*height: 100%;*/
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    border: none;
+}
+
+.tablaTitulo {
+    width: 100%;
+    height: 5vh;
+}
+
+.columnaTitulo {
+    width: 40%;
+}
+
+.LabelTitulo {
+    font-family: Calibri;
+    color: white;
+    font-size: calc(0.8em + 1vw);
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.filaFooter {
+    height: 1vh;
+}
+
+.tdMenu {
+    vertical-align: top;
+    width: 10%;
+    height: 93vh;   
+    /*min-height: 92vh;
+    max-height: 94vh;*/
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border: none;
+}
+
+.masterCuerpo {
+    width: 90%;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border: none;
+    background-color: white;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    /*height: 93vh;*/
+}
+
+.LabelMaster {
+    color: white;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+    font-weight: bold;
+}
+
+    .LabelMaster a {
+        color: white;
+        font-family: Calibri;
+        font-size: calc(0.1em + 0.7vw);
+        font-weight: bold;
+    }
+
+.PanelMenu {
+    height: 100%;
+    background-color: transparent;
+    
+}
+
+
+
+.main_menu {
+    width: 100%;
+    min-width: 10vw;
+    max-width: 10vw;
+    background-color: #333F48;
+    color: white;
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+    margin-right: 5px;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: calc(0.1em + 0.7vw);
+    box-shadow: inset 0 0 0 0.1vw #FE5000;
+    border-radius: 0.1vw;
+    
+
+}
+
+.level_menu {
+    width: 10vw;
+    min-width: 10vw;
+    max-width: 10vw;
+    background-color: #333F48;
+    color: white;
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: calc(0.1em + 0.7vw);
+    box-shadow: inset 0 0 0 0.1vw #FE5000;
+    border-radius: 0.1vw;
+}
+
+ul li a:hover {
+    background-color: #FE5000;
+    color: white;
+    box-shadow: inset 0 0 0 0.1vw #FE5000;
+}
+
+
+
+.selected {
+    background-color: gray;
+    color: white;
+}
+
+
+.Footer {
+    background-color: #FE5000;
+    background-color: #FE5000;
+    width: 100%;
+    height: 2vh;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.Gerencia {
+    color: white;
+    font-size: calc(0.4em + 0.5vw);
+    font-family: Calibri;
+    font-weight: bolder;
+    font-style: oblique;
+}

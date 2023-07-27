@@ -1,0 +1,40 @@
+﻿body {
+}
+
+.TablaBievenida {
+    width: 100%;
+}
+
+.ColumnaBienvenida {
+    width: 30%;
+}
+
+.ColumnaCentroBienvenida {
+    width: 40%;
+   
+}
+
+.ColumnaCentroBoton {
+    width: 20%;
+}
+.ColumnaBoton {
+    width: 20%;
+}
+.Espacio {
+    height: 5vh;
+}
+
+.tdTexto {
+    color: #333F48 !important;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.9vw);
+   
+}
+
+.LabelTituloBienvenida {
+    color: #FE5000 !important;
+    font-family: Calibri;
+    font-size: calc(0.5em + 1vw);
+    text-align: center;
+    font-weight: bold;
+}

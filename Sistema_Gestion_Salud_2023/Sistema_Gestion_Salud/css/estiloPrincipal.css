@@ -1,0 +1,650 @@
+﻿body {
+}
+
+#banner 
+{
+    /*background-color: *#e66000;*/
+    height: 80px;
+    /*background-image:url(/imagenes/fondo.PNG);
+    background-repeat:repeat;*/
+    border-radius:15px;
+}
+#footer 
+{
+    background-color:#333E48;
+    height: 60px; 
+    font-size:x-small;
+}
+#banner h1
+{
+    font-family:Montserrat;
+   font-size:30px;
+    text-decoration:none;
+    color:#999999;
+    margin:0;
+    text-align:center;
+    width: 75%;
+    /*border-radius:10px;*/
+}
+#banner p
+{
+    color:#999999;
+    font-family:Montserrat;
+    font-size:14px;
+    /*border-radius:10px;*/
+}
+#banner img
+{
+    margin:4px 5px auto 4px;
+}
+
+table.TablaResultadosFiltro, table.TablaResultadosFiltro td, table.TablaResultadosFiltro th 
+{
+  /*border:1px solid black;
+   border-collapse:collapse;*/
+  font-family:Calibri;
+  font-size:14px;
+
+}
+.hidden { display: none; }
+.Fila
+{
+         background-color:#FF5100;/*#EC9852;*/
+            font-weight:bold;
+            color:white;
+           
+            border:1px solid black;  
+            padding:4px; 
+            font-family:Calibri;
+            font-size:small; 
+            width:77%;
+}
+
+.Fila2
+{
+     background-color:#333E48;  
+            color:white;  
+            border:1px solid black;  
+            padding:4px;
+            font-family:Calibri;
+            font-size:small;  
+            font-weight:bold; 
+            width:77%;
+
+}
+
+.TituloResultadosFiltro
+{
+    background-color:#e66000;
+    font-weight:bold;
+    color:white;
+    font-family:Calibri;
+    font-size:12px;
+
+}
+tr.separated td {
+    /* set border style for separated rows */
+    border-bottom: 1px solid red;
+}
+
+.FilaFiltro
+{
+    border-right: 1px solid black;   
+}
+
+.FilaFiltroBottom
+{
+    border-bottom: 1px solid black;   
+}
+
+.CajaTexto
+{
+border-color: #999999; 
+border-style: solid; 
+/*background-color: #FF6600;*/ 
+color: black;
+font-family: Calibri; 
+font-size: 10pt; 
+/*width: 750px;*/
+border-radius:6px;
+}
+.CajaTexto2
+{
+border-color: #999999; 
+border-style: solid; 
+/*background-color: #FF6600;*/ 
+color: black;
+font-family: Calibri; 
+font-size: 10pt; 
+width: 350px;
+border-radius:6px;
+}
+
+.CajaTexto4
+{
+border-color: #999999; 
+border-style: solid; 
+/*background-color: #FF6600;*/ 
+color: black;
+font-family: Calibri; 
+font-size: 10pt; 
+width: 250px;
+border-radius:6px;
+}
+
+.CajaTexto3
+{
+border-color: #999999; 
+border-style: solid; 
+/*background-color: #FF6600;*/ 
+color: black;
+font-family: Calibri; 
+font-size: 10pt; 
+width: 80px;
+border-radius:6px;
+}
+
+.CajaTexto5
+{
+border-color: #999999; 
+border-style: solid; 
+/*background-color: #FF6600;*/ 
+color: black;
+font-family: Calibri; 
+font-size: 10pt; 
+width: 300px;
+height:80px;
+border-radius:6px;
+}
+
+
+.CajaCheck
+{
+width:17px;
+height:17px;
+vertical-align:central;
+border: 2px solid; 
+border-color: #999999;     
+}
+
+.Label
+{
+
+/*background-color: #FF6600;*/ 
+color: black;
+font-family: Calibri; 
+font-size: 10pt; 
+/*width: 200px;*/
+
+}
+.Label2
+{
+border-color: #999999; 
+border-style: solid; 
+/*background-color: #FF6600;*/ 
+color: black;
+font-family: Calibri; 
+font-size: 10pt; 
+width: 835px;
+}
+
+.Label3
+{
+
+/*background-color: #FF6600;*/ 
+color: black;
+font-family: Calibri; 
+font-size: 35pt; 
+width: 835px;
+}
+
+.Label4
+{
+
+/*background-color: #FF6600;*/ 
+color: black;
+font-weight:bold;
+font-family: Calibri; 
+font-size: 12pt; 
+
+}
+
+.Botons
+{
+/*font-size:10px;
+font-family:Verdana,Helvetica;
+font-weight:bold;
+color:white;
+background:#638cb5;
+border:0px;
+width:80px;
+height:19px;*/
+
+border: none;
+background: #3a7999;
+color: #f2f2f2;
+padding: 10px;
+font-size: 18px;
+border-radius: 5px;
+position: relative;
+box-sizing: border-box;
+transition: all 500ms ease;
+}
+
+.Boton {
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: #318aac;
+  border: 2px solid;
+  border-color: #318aac;
+  position: relative;
+}
+.Boton:before {
+  content:"";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 1s ease;
+}
+.Boton:hover:before {
+width: 100%;
+}
+
+.Boton2 {
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: #318aac;
+  border: 2px solid;
+  border-color: #318aac;
+  position: relative;
+}
+.Boton2:before {
+  content:"";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 1s ease;
+} 
+.Boton2:hover:before {
+  height: 100%;
+}
+
+.Boton3 {
+  /*color: #318aac !important;*/
+   color: black !important;
+  font-family: Calibri; 
+  font-size: 9pt;
+  /*font-weight: 500;*/
+  padding: 0.3em 1.2em;
+  /*border: 1px solid #318aac;*/
+   border: 1px solid #FF5100;
+  transition: all 1s ease;
+  /*position: relative;*/
+  width:155px;
+  height:26px;
+    top: 0px;
+    left: 1px;
+    background:#FFEADF
+}
+.Boton9 {
+  /*color: #318aac !important;*/
+   color: black !important;
+  font-family: Calibri; 
+  font-size: 9pt;
+  /*font-weight: 500;*/
+  padding: 0.3em 1.2em;
+  /*border: 1px solid #318aac;*/
+   border: 1px solid #FF5100;
+  transition: all 1s ease;
+  /*position: relative;*/
+  width:155px;
+  height:26px;
+    top: 0px;
+    left: 1px;
+    background:#95a5a6
+}
+.Boton9:hover{
+ background: #FF5100;
+  color: white !important;
+}
+.Boton3:hover {
+  /*background: #318aac;
+  color: #fff !important;*/
+    background: #FF5100;
+  color: white !important;
+}
+
+.Boton5 {
+  color: #318aac !important;
+  font-family: Calibri; 
+  font-size: 9pt;
+  /*font-weight: 500;*/
+  padding: 0.3em 1.2em;
+  border: 1px solid #318aac;
+  transition: all 1s ease;
+  /*position: relative;*/
+  width:200px;
+  height:26px;
+    top: 0px;
+    left: 1px;
+}
+.Boton5:hover {
+  background: #318aac;
+  color: #fff !important;
+}
+
+
+.Boton4 {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: #318aac;
+  border: 2px solid;
+  border-color: #318aac;
+  position: relative;
+}
+.Boton4:hover {
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+}
+
+.Boton7 {
+  color: #318aac !important;
+  font-family: Calibri; 
+  font-size: 9pt;
+  /*font-weight: 500;*/
+  padding: 0.3em 1.2em;
+  border: 1px solid #318aac;
+  transition: all 1s ease;
+  /*position: relative;*/
+  width:150px;
+  height:26px;
+    top: 0px;
+    left: 1px;
+}
+.Boton7:hover {
+  background: #318aac;
+  color: #fff !important;
+}
+
+
+.Boton6 {
+  color: black !important;
+  font-family: Calibri; 
+  font-size: 9pt;
+  /*font-weight: 500;*/
+  padding: 0.3em 1.2em;
+  border: 1px solid #FF5100;
+  transition: all 1s ease;
+  /*position: relative;*/
+  width:90px;
+  height:26px;
+    top: 0px;
+    left: 1px;
+    background:#FFEADF;
+}
+.Boton6:hover {
+  background: #FF5100;
+  color: white !important;
+}
+
+.BotonInicio {
+ 
+    
+    color: black !important;
+    font-family: calibri;
+     font-size: 25pt;
+      padding: 40px;
+       border: 2px solid #FF5100;
+        transition: all 1s ease;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    /*font-weight: 800;*/
+    
+      width:380px;
+    background-color: #FFEADF;
+
+}
+.BotonInicio:hover {
+  /*color: white !important;
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+   background: #FF5100;*/
+
+    background: #FF5100;
+  color: white !important;
+}
+
+.Boton8 {
+  color: white !important;
+  font-family: Calibri; 
+  font-size: 11pt;
+  font-weight:bold;
+  padding: 0.3em 1.2em;
+   border: 1px solid #FF5100;
+  transition: all 1s ease;
+  /*position: relative;*/
+  width:150px;
+  height:30px;
+    top: 0px;
+    left: 1px;
+    background:#999999
+}
+.Boton8:hover {
+  background: #FF5100;
+  color: white !important;
+}
+
+.ColumnaOculta 
+{
+    display:none;
+}
+
+.ModalPopupBG
+{
+    background-color: #333E48;
+    filter: alpha(opacity=30);
+    opacity: 0.7;
+}
+
+
+.Lista
+{
+color: black;
+font-size: 10pt;
+/*padding: 5px 10px;*/
+border-radius: 6px;
+/*background-color: #cc2a41;*/
+font-family: Calibri; 
+border-color: #999999; 
+border-style: solid; 
+width: 180px;
+/*font-weight: bold;*/
+
+
+/*background-color: #FF6600;*/ 
+
+}
+
+ .CajaDialogo
+ {
+      
+      
+
+          background-color: white/*#69BF4B*/;         
+        color: black/*#000*/;
+        /*text-align: center;*/
+        /*height: 30px;*/
+        line-height: 30px;
+        margin-right: 5px;
+        font-family: Calibri;
+        /*font-weight:bold;*/
+        /*font-size: 10pt;*/
+        /*padding: 10px ;*/
+        box-shadow: inset 0 0 0 2px #FF5100;
+         border-radius:8px;
+         height:150pt;
+         width:300pt;
+         background-image: url("../imagenes/FondoAlerta.png");
+         background-position: right; 
+         background-repeat: no-repeat;
+
+}
+
+.CajaDialogo div
+{
+        margin: 7px;
+        text-align: center;
+}
+
+.LabelCajaDialogo
+{
+    font-size:12pt;
+}
+
+.Background 
+{
+    background-color:Gray;
+    filter:alpha(opacity=40);
+    opacity:0.4;
+}
+
+.Pnl 
+{    
+position: center;
+    /*top:100%;
+    left:600px;*/
+    width:500px;
+    height:250px;
+    text-align:center;
+    background-color:White;
+    border:solid 3px black;
+    border-color:#FF5000;
+    border-radius: 6px;
+ }
+
+.Pnl2 
+{    
+position: center;
+    /*top:100%;
+    left:600px;*/
+    /*width:500px;
+    height:250px;*/
+    text-align:center;
+    background-color:White;
+    border:solid 3px black;
+    border-color:#FF5000;
+    border-radius: 6px;
+ }
+
+.Pnl3 
+{    
+position: center;
+    /*top:100%;
+    left:600px;*/
+  
+  /*  height:250px;*/
+    text-align:center;
+    background-color:White;
+    border:solid 3px black;
+    border-color:#FF5000;
+    border-radius: 8px;
+ }
+
+.Pnl4 
+{    
+position: center;
+    /*top:100%;
+    left:600px;*/
+    width:55%;
+    height:90%;
+    /*text-align:center;*/
+    background-color:White;
+    border:solid 3px black;
+    border-color:#FF5000;
+    border-radius: 6px;
+ }
+
+.Pnl5 
+{    
+position: center;
+    /*top:100%;
+    left:600px;*/
+   width:710px;
+    height:750px;
+    /*text-align:center;*/
+    background-color:White;
+    border:solid 3px black;
+    border-color:#FF5000;
+    border-radius: 6px;
+ }
+
+.CompletionList {
+        border: solid 1px #444444;
+        margin: 0px;
+        padding: 1px;
+        height: 100px;
+        overflow: auto;
+        background-color: white;
+        font-family: Calibri; 
+        font-size: 10pt;
+    }
+
+    .ListItem {
+        color: black;
+    }
+
+.ItemHighlighted {
+  background-color: #999999;
+  color:White;
+}
+
+
+
+/*.Grid {background-color: #fff; margin: 5px 0 10px 0; border: solid 1px #525252; border-collapse:collapse; font-family:Calibri; color: #474747;}
+
+.Grid td {
+
+      padding: 2px;
+
+      border: solid 1px #c1c1c1; }
+
+.Grid th  {
+
+      padding : 4px 2px;
+
+      color: #fff;
+
+      background: #66FFCC url(../imagenes/grid-header.png) repeat-x top;  
+
+      border-left: solid 1px #525252;
+
+      font-size: 0.9em; }
+
+.Grid .alt {
+
+      background: #fcfcfc url(../imagenes/grid-alt.png) repeat-x top; }
+
+.Grid .pgr {background: #363670 url(../imagenes/grid-pgr.png) repeat-x top; }
+
+.Grid .pgr table { margin: 3px 0; }
+
+.Grid .pgr td { border-width: 0; padding: 0 6px; border-left: solid 1px #666; font-weight: bold; color: #fff; line-height: 12px; }  
+
+.Grid .pgr a { color: Gray; text-decoration: none; }
+
+.Grid .pgr a:hover { color: #000; text-decoration: none; }*/
+

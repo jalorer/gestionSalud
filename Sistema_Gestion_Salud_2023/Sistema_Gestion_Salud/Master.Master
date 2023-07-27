@@ -1,0 +1,146 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="Sistema_Gestion_Salud.Master" %>
+
+<!DOCTYPE html>
+
+<html lang="es" style="width: 100%">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE10" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Gestión de Salud </title>
+    <link href="css/Master.css" rel="stylesheet" />
+    <link href="css/Principal.css" rel="stylesheet" />
+    <link href="css/FileUpload.css" rel="stylesheet" />
+    <link href="css/GridView.css" rel="stylesheet" />
+    <link href="css/Autocomplete.css" rel="stylesheet" />
+    <link href="css/Tab.css" rel="stylesheet" />
+    <link href="css/PanelMensajeModal.css" rel="stylesheet" />
+    <link href="css/Bienvenida.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="/Scripts/swalert.js" type="text/javascript"></script>
+
+<%--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <link href="css/sumoselect.css" rel="stylesheet">
+    <script src="/Scripts/jquery.sumoselect.min.js"></script>--%>
+    
+
+    <script type="text/javascript">
+        function msgSuccesful(msg1, title) {
+            swal({
+                title: title,
+                text: msg1,
+                icon: "success",
+                button: "Ok",
+            });
+        }
+        function msgerror(msg, icon, title) {
+            swal({
+                title: title,
+                text: msg,
+                icon: icon,
+                button: "Ok",
+            });
+        }
+        function msgSuccesful2(msg1,title,locationfrm,icon) {
+            swal({
+                title: title,
+                text: msg1,
+                icon: icon,
+                button: "Ok",
+            }).then(function () {
+                window.location = locationfrm;
+            });
+        }
+    </script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+        <table class="tablaMaster">
+            <tr>
+                <td colspan="2">
+                    <br />
+                    <table class="tablaTitulo">
+                        <tr>
+                            <td class="columnaTitulo"></td>
+                            <td>
+                                <asp:Label ID="Label3" runat="server" Text="Sistema de Gestión de Salud" CssClass="LabelTitulo"></asp:Label>
+                            </td>
+                            <td>
+                                <p style="text-align: right; width: 90%;">
+                                    <asp:Label ID="Label1" runat="server" Text="Usuario:" CssClass="LabelMaster"></asp:Label>
+                                    <asp:Label ID="lblUsuarioConectado" runat="server" Text="Label" CssClass="LabelMaster"></asp:Label>
+
+                                    <asp:HyperLink ID="HyperLink1" runat="server" Text="Cerrar Sesión" NavigateUrl="frmLogin.aspx" CssClass="LabelMaster"></asp:HyperLink>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+
+
+
+                </td>
+            </tr>
+            <%--     <tr>
+                <td class="tdMenu" rowspan="2">--%>
+            <tr class="filaMaster">
+                <td class="tdMenu" rowspan="1">
+                    <asp:Panel ID="Panel1" runat="server" CssClass="PanelMenu">
+                        <table>
+<%--                            <tr>
+                                <td></td>
+                                <td>
+                                    <asp:Button ID="Button1" runat="server" CssClass="BotonVolver" Text="Volver Menú Inicial" OnClick="btnVolver_Click" />
+                                </td>
+                                <td></td>
+
+                            </tr>--%>
+                            <tr>
+                                <td></td>
+                                <td>
+
+                                    <asp:Menu ID="MenuInicio" runat="server" DynamicPopOutImageUrl="~/imagenes/trans.gif" StaticEnableDefaultPopOutImage="False" Orientation="Vertical">
+
+                                        <LevelMenuItemStyles>
+                                            <asp:MenuItemStyle CssClass="main_menu" />
+                                            <asp:MenuItemStyle CssClass="level_menu" />
+                                        </LevelMenuItemStyles>
+                                        <Items>
+                                        </Items>
+                                    </asp:Menu>
+
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+
+
+                    </asp:Panel>
+
+                </td>
+
+
+                <td class="masterCuerpo">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="Footer">
+            <asp:Label ID="Label2" runat="server" Text="Gerencia de Informática y Transformación Digital" CssClass="Gerencia"></asp:Label>
+        </div>
+
+
+
+    </form>
+</body>
+</html>

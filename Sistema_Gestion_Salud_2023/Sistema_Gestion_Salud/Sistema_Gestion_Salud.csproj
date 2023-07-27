@@ -1,0 +1,626 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F6E512F-40F9-4DB4-B7C2-45A0D6C45F0C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sistema_Gestion_Salud</RootNamespace>
+    <AssemblyName>Sistema_Gestion_Salud</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Sistema Confiabilidad Mina\SistemaConfiabilidadMina\SistemaConfiabilidad\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\Accordeon.css" />
+    <Content Include="css\Autocomplete.css" />
+    <Content Include="css\Bienvenida.css" />
+    <Content Include="css\estiloPrincipal.css" />
+    <Content Include="css\FileUpload.css" />
+    <Content Include="css\GridView.css" />
+    <Content Include="css\Login.css" />
+    <Content Include="css\Master.css" />
+    <Content Include="css\MenuMenu.css" />
+    <Content Include="css\PanelMensajeModal.css" />
+    <Content Include="css\Principal.css" />
+    <Content Include="css\Tab.css" />
+    <Content Include="frmLogin.aspx" />
+    <Content Include="imagenes\Alerta.png" />
+    <Content Include="imagenes\Error.png" />
+    <Content Include="imagenes\estar.PNG" />
+    <Content Include="imagenes\estar2.png" />
+    <Content Include="imagenes\estar3.png" />
+    <Content Include="imagenes\estar4.png" />
+    <Content Include="imagenes\Exito - copia.png" />
+    <Content Include="imagenes\Exito.png" />
+    <Content Include="imagenes\fondo.PNG" />
+    <Content Include="imagenes\FondoAlerta.png" />
+    <Content Include="imagenes\FondoAlto-copia.png" />
+    <Content Include="imagenes\FondoAlto.png" />
+    <Content Include="imagenes\FondoAltoGris.png" />
+    <Content Include="imagenes\FondoApp.png" />
+    <Content Include="imagenes\FondoAppGrisClaro.png" />
+    <Content Include="imagenes\FondoBajo - copia.png" />
+    <Content Include="imagenes\FondoBajo.png" />
+    <Content Include="imagenes\FondoGrisApp.png" />
+    <Content Include="imagenes\FondoLogin - copia.png" />
+    <Content Include="imagenes\FondoLogin.png" />
+    <Content Include="imagenes\grid-alt.png" />
+    <Content Include="imagenes\grid-header.png" />
+    <Content Include="imagenes\grid-pgr.png" />
+    <Content Include="imagenes\Iconos\Agregar.png" />
+    <Content Include="imagenes\Iconos\analitica.png" />
+    <Content Include="imagenes\Iconos\comentario.png" />
+    <Content Include="imagenes\Iconos\descarga.png" />
+    <Content Include="imagenes\Iconos\diario.png" />
+    <Content Include="imagenes\Iconos\documento.png" />
+    <Content Include="imagenes\Iconos\editar.png" />
+    <Content Include="imagenes\Iconos\Eliminar.png" />
+    <Content Include="imagenes\Iconos\Formulario.png" />
+    <Content Include="imagenes\Iconos\Menos.png" />
+    <Content Include="imagenes\Iconos\Seleccionar.png" />
+    <Content Include="imagenes\Iconos\Ver.png" />
+    <Content Include="imagenes\ImagenFondo1.PNG" />
+    <Content Include="imagenes\ImagenFondo1_sincambios.PNG" />
+    <Content Include="imagenes\ImagenFondo2 - copia.PNG" />
+    <Content Include="imagenes\ImagenFondo2.PNG" />
+    <Content Include="imagenes\loader.gif" />
+    <Content Include="imagenes\loading %281%29.gif" />
+    <Content Include="imagenes\loading %283%29.gif" />
+    <Content Include="imagenes\loading.gif" />
+    <Content Include="imagenes\login.png" />
+    <Content Include="imagenes\login2.png" />
+    <Content Include="imagenes\logo_sg.png" />
+    <Content Include="imagenes\logo_sg2.png" />
+    <Content Include="imagenes\Logo_SG_Blanco.png" />
+    <Content Include="imagenes\Logo_SG_Naranja.png" />
+    <Content Include="imagenes\logo_sg_naranja2.png" />
+    <Content Include="imagenes\Logo_SG_pequeno.png" />
+    <Content Include="imagenes\menu-16\Black\icon-addtolist.png" />
+    <Content Include="imagenes\menu-16\Black\icon-arrow-down.png" />
+    <Content Include="imagenes\menu-16\Black\icon-arrow-left.png" />
+    <Content Include="imagenes\menu-16\Black\icon-arrow-right.png" />
+    <Content Include="imagenes\menu-16\Black\icon-arrow-up.png" />
+    <Content Include="imagenes\menu-16\Black\icon-asterisk.png" />
+    <Content Include="imagenes\menu-16\Black\icon-asteriskalt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-backward.png" />
+    <Content Include="imagenes\menu-16\Black\icon-ban-circle.png" />
+    <Content Include="imagenes\menu-16\Black\icon-bigger.png" />
+    <Content Include="imagenes\menu-16\Black\icon-capslock.png" />
+    <Content Include="imagenes\menu-16\Black\icon-check.png" />
+    <Content Include="imagenes\menu-16\Black\icon-checkboxalt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-chevron-down.png" />
+    <Content Include="imagenes\menu-16\Black\icon-chevron-left.png" />
+    <Content Include="imagenes\menu-16\Black\icon-chevron-right.png" />
+    <Content Include="imagenes\menu-16\Black\icon-chevron-up.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circle-arrow-down.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circle-arrow-left.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circle-arrow-right.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circle-arrow-up.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circledown.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circleleft.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circleloaderempty.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circleloaderfive.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circleloaderfour.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circleloaderfull.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circleloaderone.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circleloaderseven.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circleloadersix.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circleloaderthree.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circleloadertwo.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circleright.png" />
+    <Content Include="imagenes\menu-16\Black\icon-circleup.png" />
+    <Content Include="imagenes\menu-16\Black\icon-clipboardalt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-cog.png" />
+    <Content Include="imagenes\menu-16\Black\icon-divide.png" />
+    <Content Include="imagenes\menu-16\Black\icon-downleft.png" />
+    <Content Include="imagenes\menu-16\Black\icon-downright.png" />
+    <Content Include="imagenes\menu-16\Black\icon-edit.png" />
+    <Content Include="imagenes\menu-16\Black\icon-enter.png" />
+    <Content Include="imagenes\menu-16\Black\icon-enteralt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-equals.png" />
+    <Content Include="imagenes\menu-16\Black\icon-exit.png" />
+    <Content Include="imagenes\menu-16\Black\icon-exitalt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-export.png" />
+    <Content Include="imagenes\menu-16\Black\icon-exportfile.png" />
+    <Content Include="imagenes\menu-16\Black\icon-eye-close.png" />
+    <Content Include="imagenes\menu-16\Black\icon-eye-open.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fast-backward.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fast-forward.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fastdown.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fastleft.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fastright.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fastup.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fatarrowdown.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fatarrowleft.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fatarrowright.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fatarrowup.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fatredo.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fatundo.png" />
+    <Content Include="imagenes\menu-16\Black\icon-flowdown.png" />
+    <Content Include="imagenes\menu-16\Black\icon-flowup.png" />
+    <Content Include="imagenes\menu-16\Black\icon-forbidden.png" />
+    <Content Include="imagenes\menu-16\Black\icon-forbiddenalt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-forward.png" />
+    <Content Include="imagenes\menu-16\Black\icon-fullscreen.png" />
+    <Content Include="imagenes\menu-16\Black\icon-gearfour.png" />
+    <Content Include="imagenes\menu-16\Black\icon-horizontalcontract.png" />
+    <Content Include="imagenes\menu-16\Black\icon-horizontalexpand.png" />
+    <Content Include="imagenes\menu-16\Black\icon-import.png" />
+    <Content Include="imagenes\menu-16\Black\icon-importfile.png" />
+    <Content Include="imagenes\menu-16\Black\icon-info-sign.png" />
+    <Content Include="imagenes\menu-16\Black\icon-infographic.png" />
+    <Content Include="imagenes\menu-16\Black\icon-keyboarddelete.png" />
+    <Content Include="imagenes\menu-16\Black\icon-knob.png" />
+    <Content Include="imagenes\menu-16\Black\icon-lightbulb-idea.png" />
+    <Content Include="imagenes\menu-16\Black\icon-linkalt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-list-alt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-loadingalt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-loadingeight.png" />
+    <Content Include="imagenes\menu-16\Black\icon-loadingfive.png" />
+    <Content Include="imagenes\menu-16\Black\icon-loadingflowccw.png" />
+    <Content Include="imagenes\menu-16\Black\icon-loadingflowcw.png" />
+    <Content Include="imagenes\menu-16\Black\icon-loadingfour.png" />
+    <Content Include="imagenes\menu-16\Black\icon-loadingone.png" />
+    <Content Include="imagenes\menu-16\Black\icon-loadingseven.png" />
+    <Content Include="imagenes\menu-16\Black\icon-loadingsix.png" />
+    <Content Include="imagenes\menu-16\Black\icon-loadingthree.png" />
+    <Content Include="imagenes\menu-16\Black\icon-loadingtwo.png" />
+    <Content Include="imagenes\menu-16\Black\icon-markerdown.png" />
+    <Content Include="imagenes\menu-16\Black\icon-markerleft.png" />
+    <Content Include="imagenes\menu-16\Black\icon-markerright.png" />
+    <Content Include="imagenes\menu-16\Black\icon-markerup.png" />
+    <Content Include="imagenes\menu-16\Black\icon-maximize.png" />
+    <Content Include="imagenes\menu-16\Black\icon-merge.png" />
+    <Content Include="imagenes\menu-16\Black\icon-mergecells.png" />
+    <Content Include="imagenes\menu-16\Black\icon-minimize.png" />
+    <Content Include="imagenes\menu-16\Black\icon-minus-sign.png" />
+    <Content Include="imagenes\menu-16\Black\icon-minus.png" />
+    <Content Include="imagenes\menu-16\Black\icon-move.png" />
+    <Content Include="imagenes\menu-16\Black\icon-octoloaderempty.png" />
+    <Content Include="imagenes\menu-16\Black\icon-octoloaderfive.png" />
+    <Content Include="imagenes\menu-16\Black\icon-octoloaderfour.png" />
+    <Content Include="imagenes\menu-16\Black\icon-octoloaderfull.png" />
+    <Content Include="imagenes\menu-16\Black\icon-octoloaderone.png" />
+    <Content Include="imagenes\menu-16\Black\icon-octoloaderseven.png" />
+    <Content Include="imagenes\menu-16\Black\icon-octoloadersix.png" />
+    <Content Include="imagenes\menu-16\Black\icon-octoloaderthree.png" />
+    <Content Include="imagenes\menu-16\Black\icon-octoloadertwo.png" />
+    <Content Include="imagenes\menu-16\Black\icon-ok-circle.png" />
+    <Content Include="imagenes\menu-16\Black\icon-ok-sign.png" />
+    <Content Include="imagenes\menu-16\Black\icon-ok.png" />
+    <Content Include="imagenes\menu-16\Black\icon-opennewwindow.png" />
+    <Content Include="imagenes\menu-16\Black\icon-pageback.png" />
+    <Content Include="imagenes\menu-16\Black\icon-pageforward.png" />
+    <Content Include="imagenes\menu-16\Black\icon-pagesetup.png" />
+    <Content Include="imagenes\menu-16\Black\icon-pastealt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-percent.png" />
+    <Content Include="imagenes\menu-16\Black\icon-plus-sign.png" />
+    <Content Include="imagenes\menu-16\Black\icon-plus.png" />
+    <Content Include="imagenes\menu-16\Black\icon-preview.png" />
+    <Content Include="imagenes\menu-16\Black\icon-question-sign.png" />
+    <Content Include="imagenes\menu-16\Black\icon-quotedown.png" />
+    <Content Include="imagenes\menu-16\Black\icon-quoteup.png" />
+    <Content Include="imagenes\menu-16\Black\icon-radiobutton.png" />
+    <Content Include="imagenes\menu-16\Black\icon-refreshalt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-remove-circle.png" />
+    <Content Include="imagenes\menu-16\Black\icon-remove-sign.png" />
+    <Content Include="imagenes\menu-16\Black\icon-remove.png" />
+    <Content Include="imagenes\menu-16\Black\icon-repeat.png" />
+    <Content Include="imagenes\menu-16\Black\icon-resize-full.png" />
+    <Content Include="imagenes\menu-16\Black\icon-resize-horizontal.png" />
+    <Content Include="imagenes\menu-16\Black\icon-resize-small.png" />
+    <Content Include="imagenes\menu-16\Black\icon-resize-vertical.png" />
+    <Content Include="imagenes\menu-16\Black\icon-resizehorizontalalt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-resizeverticalalt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-restore.png" />
+    <Content Include="imagenes\menu-16\Black\icon-settingsandroid.png" />
+    <Content Include="imagenes\menu-16\Black\icon-settingsfour-gearsalt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-settingsthree-gears.png" />
+    <Content Include="imagenes\menu-16\Black\icon-settingstwo-gearalt.png" />
+    <Content Include="imagenes\menu-16\Black\icon-sharetwo.png" />
+    <Content Include="imagenes\menu-16\Black\icon-slideronefull.png" />
+    <Content Include="imagenes\menu-16\Black\icon-slidersasc.png" />
+    <Content Include="imagenes\menu-16\Black\icon-slidersdesc.png" />
+    <Content Include="imagenes\menu-16\Black\icon-slidersfull.png" />
+    <Content Include="imagenes\menu-16\Black\icon-slidersmiddle.png" />
+    <Content Include="imagenes\menu-16\Black\icon-slidersoff.png" />
+    <Content Include="imagenes\menu-16\Black\icon-sliderthreefull.png" />
+    <Content Include="imagenes\menu-16\Black\icon-slidertwofull.png" />
+    <Content Include="imagenes\menu-16\Black\icon-smaller.png" />
+    <Content Include="imagenes\menu-16\Black\icon-split.png" />
+    <Content Include="imagenes\menu-16\Black\icon-squaresearch.png" />
+    <Content Include="imagenes\menu-16\Black\icon-squaresettings.png" />
+    <Content Include="imagenes\menu-16\Black\icon-squarevoice.png" />
+    <Content Include="imagenes\menu-16\Black\icon-stacks.png" />
+    <Content Include="imagenes\menu-16\Black\icon-sum.png" />
+    <Content Include="imagenes\menu-16\Black\icon-switchoff.png" />
+    <Content Include="imagenes\menu-16\Black\icon-switchon.png" />
+    <Content Include="imagenes\menu-16\Black\icon-synckeeplocal.png" />
+    <Content Include="imagenes\menu-16\Black\icon-synckeepserver.png" />
+    <Content Include="imagenes\menu-16\Black\icon-undo.png" />
+    <Content Include="imagenes\menu-16\Black\icon-upleft.png" />
+    <Content Include="imagenes\menu-16\Black\icon-upright.png" />
+    <Content Include="imagenes\menu-16\Black\icon-warning-sign.png" />
+    <Content Include="imagenes\menu-16\Black\icon-wizardhat.png" />
+    <Content Include="imagenes\menu-16\Black\icon-zoom-in.png" />
+    <Content Include="imagenes\menu-16\Black\icon-zoom-out.png" />
+    <Content Include="imagenes\menu-16\White\icon-addtolist.png" />
+    <Content Include="imagenes\menu-16\White\icon-arrow-down.png" />
+    <Content Include="imagenes\menu-16\White\icon-arrow-left.png" />
+    <Content Include="imagenes\menu-16\White\icon-arrow-right.png" />
+    <Content Include="imagenes\menu-16\White\icon-arrow-up.png" />
+    <Content Include="imagenes\menu-16\White\icon-asterisk.png" />
+    <Content Include="imagenes\menu-16\White\icon-asteriskalt.png" />
+    <Content Include="imagenes\menu-16\White\icon-backward.png" />
+    <Content Include="imagenes\menu-16\White\icon-ban-circle.png" />
+    <Content Include="imagenes\menu-16\White\icon-bigger.png" />
+    <Content Include="imagenes\menu-16\White\icon-capslock.png" />
+    <Content Include="imagenes\menu-16\White\icon-check.png" />
+    <Content Include="imagenes\menu-16\White\icon-checkboxalt.png" />
+    <Content Include="imagenes\menu-16\White\icon-chevron-down.png" />
+    <Content Include="imagenes\menu-16\White\icon-chevron-left.png" />
+    <Content Include="imagenes\menu-16\White\icon-chevron-right.png" />
+    <Content Include="imagenes\menu-16\White\icon-chevron-up.png" />
+    <Content Include="imagenes\menu-16\White\icon-circle-arrow-down.png" />
+    <Content Include="imagenes\menu-16\White\icon-circle-arrow-left.png" />
+    <Content Include="imagenes\menu-16\White\icon-circle-arrow-right.png" />
+    <Content Include="imagenes\menu-16\White\icon-circle-arrow-up.png" />
+    <Content Include="imagenes\menu-16\White\icon-circledown.png" />
+    <Content Include="imagenes\menu-16\White\icon-circleleft.png" />
+    <Content Include="imagenes\menu-16\White\icon-circleloaderempty.png" />
+    <Content Include="imagenes\menu-16\White\icon-circleloaderfive.png" />
+    <Content Include="imagenes\menu-16\White\icon-circleloaderfour.png" />
+    <Content Include="imagenes\menu-16\White\icon-circleloaderfull.png" />
+    <Content Include="imagenes\menu-16\White\icon-circleloaderone.png" />
+    <Content Include="imagenes\menu-16\White\icon-circleloaderseven.png" />
+    <Content Include="imagenes\menu-16\White\icon-circleloadersix.png" />
+    <Content Include="imagenes\menu-16\White\icon-circleloaderthree.png" />
+    <Content Include="imagenes\menu-16\White\icon-circleloadertwo.png" />
+    <Content Include="imagenes\menu-16\White\icon-circleright.png" />
+    <Content Include="imagenes\menu-16\White\icon-circleup.png" />
+    <Content Include="imagenes\menu-16\White\icon-clipboardalt.png" />
+    <Content Include="imagenes\menu-16\White\icon-cog.png" />
+    <Content Include="imagenes\menu-16\White\icon-divide.png" />
+    <Content Include="imagenes\menu-16\White\icon-downleft.png" />
+    <Content Include="imagenes\menu-16\White\icon-downright.png" />
+    <Content Include="imagenes\menu-16\White\icon-edit.png" />
+    <Content Include="imagenes\menu-16\White\icon-enter.png" />
+    <Content Include="imagenes\menu-16\White\icon-enteralt.png" />
+    <Content Include="imagenes\menu-16\White\icon-equals.png" />
+    <Content Include="imagenes\menu-16\White\icon-exit.png" />
+    <Content Include="imagenes\menu-16\White\icon-exitalt.png" />
+    <Content Include="imagenes\menu-16\White\icon-export.png" />
+    <Content Include="imagenes\menu-16\White\icon-exportfile.png" />
+    <Content Include="imagenes\menu-16\White\icon-eye-close.png" />
+    <Content Include="imagenes\menu-16\White\icon-eye-open.png" />
+    <Content Include="imagenes\menu-16\White\icon-fast-backward.png" />
+    <Content Include="imagenes\menu-16\White\icon-fast-forward.png" />
+    <Content Include="imagenes\menu-16\White\icon-fastdown.png" />
+    <Content Include="imagenes\menu-16\White\icon-fastleft.png" />
+    <Content Include="imagenes\menu-16\White\icon-fastright.png" />
+    <Content Include="imagenes\menu-16\White\icon-fastup.png" />
+    <Content Include="imagenes\menu-16\White\icon-fatarrowdown.png" />
+    <Content Include="imagenes\menu-16\White\icon-fatarrowleft.png" />
+    <Content Include="imagenes\menu-16\White\icon-fatarrowright.png" />
+    <Content Include="imagenes\menu-16\White\icon-fatarrowup.png" />
+    <Content Include="imagenes\menu-16\White\icon-fatredo.png" />
+    <Content Include="imagenes\menu-16\White\icon-fatundo.png" />
+    <Content Include="imagenes\menu-16\White\icon-flowdown.png" />
+    <Content Include="imagenes\menu-16\White\icon-flowup.png" />
+    <Content Include="imagenes\menu-16\White\icon-forbidden.png" />
+    <Content Include="imagenes\menu-16\White\icon-forbiddenalt.png" />
+    <Content Include="imagenes\menu-16\White\icon-forward.png" />
+    <Content Include="imagenes\menu-16\White\icon-fullscreen.png" />
+    <Content Include="imagenes\menu-16\White\icon-gearfour.png" />
+    <Content Include="imagenes\menu-16\White\icon-horizontalcontract.png" />
+    <Content Include="imagenes\menu-16\White\icon-horizontalexpand.png" />
+    <Content Include="imagenes\menu-16\White\icon-import.png" />
+    <Content Include="imagenes\menu-16\White\icon-importfile.png" />
+    <Content Include="imagenes\menu-16\White\icon-info-sign.png" />
+    <Content Include="imagenes\menu-16\White\icon-infographic.png" />
+    <Content Include="imagenes\menu-16\White\icon-keyboarddelete.png" />
+    <Content Include="imagenes\menu-16\White\icon-knob.png" />
+    <Content Include="imagenes\menu-16\White\icon-lightbulb-idea.png" />
+    <Content Include="imagenes\menu-16\White\icon-linkalt.png" />
+    <Content Include="imagenes\menu-16\White\icon-list-alt.png" />
+    <Content Include="imagenes\menu-16\White\icon-loadingalt.png" />
+    <Content Include="imagenes\menu-16\White\icon-loadingeight.png" />
+    <Content Include="imagenes\menu-16\White\icon-loadingfive.png" />
+    <Content Include="imagenes\menu-16\White\icon-loadingflowccw.png" />
+    <Content Include="imagenes\menu-16\White\icon-loadingflowcw.png" />
+    <Content Include="imagenes\menu-16\White\icon-loadingfour.png" />
+    <Content Include="imagenes\menu-16\White\icon-loadingone.png" />
+    <Content Include="imagenes\menu-16\White\icon-loadingseven.png" />
+    <Content Include="imagenes\menu-16\White\icon-loadingsix.png" />
+    <Content Include="imagenes\menu-16\White\icon-loadingthree.png" />
+    <Content Include="imagenes\menu-16\White\icon-loadingtwo.png" />
+    <Content Include="imagenes\menu-16\White\icon-markerdown.png" />
+    <Content Include="imagenes\menu-16\White\icon-markerleft.png" />
+    <Content Include="imagenes\menu-16\White\icon-markerright.png" />
+    <Content Include="imagenes\menu-16\White\icon-markerup.png" />
+    <Content Include="imagenes\menu-16\White\icon-maximize.png" />
+    <Content Include="imagenes\menu-16\White\icon-merge.png" />
+    <Content Include="imagenes\menu-16\White\icon-mergecells.png" />
+    <Content Include="imagenes\menu-16\White\icon-minimize.png" />
+    <Content Include="imagenes\menu-16\White\icon-minus-sign.png" />
+    <Content Include="imagenes\menu-16\White\icon-minus.png" />
+    <Content Include="imagenes\menu-16\White\icon-move.png" />
+    <Content Include="imagenes\menu-16\White\icon-octoloaderempty.png" />
+    <Content Include="imagenes\menu-16\White\icon-octoloaderfive.png" />
+    <Content Include="imagenes\menu-16\White\icon-octoloaderfour.png" />
+    <Content Include="imagenes\menu-16\White\icon-octoloaderfull.png" />
+    <Content Include="imagenes\menu-16\White\icon-octoloaderone.png" />
+    <Content Include="imagenes\menu-16\White\icon-octoloaderseven.png" />
+    <Content Include="imagenes\menu-16\White\icon-octoloadersix.png" />
+    <Content Include="imagenes\menu-16\White\icon-octoloaderthree.png" />
+    <Content Include="imagenes\menu-16\White\icon-octoloadertwo.png" />
+    <Content Include="imagenes\menu-16\White\icon-ok-circle.png" />
+    <Content Include="imagenes\menu-16\White\icon-ok-sign.png" />
+    <Content Include="imagenes\menu-16\White\icon-ok.png" />
+    <Content Include="imagenes\menu-16\White\icon-opennewwindow.png" />
+    <Content Include="imagenes\menu-16\White\icon-pageback.png" />
+    <Content Include="imagenes\menu-16\White\icon-pageforward.png" />
+    <Content Include="imagenes\menu-16\White\icon-pagesetup.png" />
+    <Content Include="imagenes\menu-16\White\icon-pastealt.png" />
+    <Content Include="imagenes\menu-16\White\icon-percent.png" />
+    <Content Include="imagenes\menu-16\White\icon-plus-sign.png" />
+    <Content Include="imagenes\menu-16\White\icon-plus.png" />
+    <Content Include="imagenes\menu-16\White\icon-preview.png" />
+    <Content Include="imagenes\menu-16\White\icon-question-sign.png" />
+    <Content Include="imagenes\menu-16\White\icon-quotedown.png" />
+    <Content Include="imagenes\menu-16\White\icon-quoteup.png" />
+    <Content Include="imagenes\menu-16\White\icon-radiobutton.png" />
+    <Content Include="imagenes\menu-16\White\icon-refreshalt.png" />
+    <Content Include="imagenes\menu-16\White\icon-remove-circle.png" />
+    <Content Include="imagenes\menu-16\White\icon-remove-sign.png" />
+    <Content Include="imagenes\menu-16\White\icon-remove.png" />
+    <Content Include="imagenes\menu-16\White\icon-repeat.png" />
+    <Content Include="imagenes\menu-16\White\icon-resize-full.png" />
+    <Content Include="imagenes\menu-16\White\icon-resize-horizontal.png" />
+    <Content Include="imagenes\menu-16\White\icon-resize-small.png" />
+    <Content Include="imagenes\menu-16\White\icon-resize-vertical.png" />
+    <Content Include="imagenes\menu-16\White\icon-resizehorizontalalt.png" />
+    <Content Include="imagenes\menu-16\White\icon-resizeverticalalt.png" />
+    <Content Include="imagenes\menu-16\White\icon-restore.png" />
+    <Content Include="imagenes\menu-16\White\icon-settingsandroid.png" />
+    <Content Include="imagenes\menu-16\White\icon-settingsfour-gearsalt.png" />
+    <Content Include="imagenes\menu-16\White\icon-settingsthree-gears.png" />
+    <Content Include="imagenes\menu-16\White\icon-settingstwo-gearalt.png" />
+    <Content Include="imagenes\menu-16\White\icon-sharetwo.png" />
+    <Content Include="imagenes\menu-16\White\icon-slideronefull.png" />
+    <Content Include="imagenes\menu-16\White\icon-slidersasc.png" />
+    <Content Include="imagenes\menu-16\White\icon-slidersdesc.png" />
+    <Content Include="imagenes\menu-16\White\icon-slidersfull.png" />
+    <Content Include="imagenes\menu-16\White\icon-slidersmiddle.png" />
+    <Content Include="imagenes\menu-16\White\icon-slidersoff.png" />
+    <Content Include="imagenes\menu-16\White\icon-sliderthreefull.png" />
+    <Content Include="imagenes\menu-16\White\icon-slidertwofull.png" />
+    <Content Include="imagenes\menu-16\White\icon-smaller.png" />
+    <Content Include="imagenes\menu-16\White\icon-split.png" />
+    <Content Include="imagenes\menu-16\White\icon-squaresearch.png" />
+    <Content Include="imagenes\menu-16\White\icon-squaresettings.png" />
+    <Content Include="imagenes\menu-16\White\icon-squarevoice.png" />
+    <Content Include="imagenes\menu-16\White\icon-stacks.png" />
+    <Content Include="imagenes\menu-16\White\icon-sum.png" />
+    <Content Include="imagenes\menu-16\White\icon-switchoff.png" />
+    <Content Include="imagenes\menu-16\White\icon-switchon.png" />
+    <Content Include="imagenes\menu-16\White\icon-synckeeplocal.png" />
+    <Content Include="imagenes\menu-16\White\icon-synckeepserver.png" />
+    <Content Include="imagenes\menu-16\White\icon-undo.png" />
+    <Content Include="imagenes\menu-16\White\icon-upleft.png" />
+    <Content Include="imagenes\menu-16\White\icon-upright.png" />
+    <Content Include="imagenes\menu-16\White\icon-warning-sign.png" />
+    <Content Include="imagenes\menu-16\White\icon-wizardhat.png" />
+    <Content Include="imagenes\menu-16\White\icon-zoom-in.png" />
+    <Content Include="imagenes\menu-16\White\icon-zoom-out.png" />
+    <Content Include="imagenes\Sin título.png" />
+    <Content Include="imagenes\Sin título2.png" />
+    <Content Include="imagenes\Sin título3.png" />
+    <Content Include="imagenes\Sin título4.png" />
+    <Content Include="imagenes\TIC - estaes laoriginal.jpg" />
+    <Content Include="imagenes\TIC.jpg" />
+    <Content Include="imagenes\TIC_ - copia.jpg" />
+    <Content Include="imagenes\TIC_.jpg" />
+    <Content Include="imagenes\TIC_2.png" />
+    <Content Include="imagenes\TIC_3 - copia %282%29.png" />
+    <Content Include="imagenes\TIC_3 - copia %283%29.png" />
+    <Content Include="imagenes\TIC_3 - copia.png" />
+    <Content Include="imagenes\TIC_3.png" />
+    <Content Include="imagenes\TIC_4.png" />
+    <Content Include="imagenes\TIC_4_bck.png" />
+    <Content Include="imagenes\TIC_5.png" />
+    <Content Include="imagenes\TIC_dd.jpg" />
+    <Content Include="imagenes\TIC_r.jpg" />
+    <Content Include="imagenes\TIC____.jpg" />
+    <Content Include="imagenes\trans.gif" />
+    <Content Include="imagenes\trans.png" />
+    <Content Include="imagenes\Warning.PNG" />
+    <Content Include="imagenes\wave %281%29.png" />
+    <Content Include="Presentacion\frmAntecedentes_Trabajador.aspx" />
+    <Content Include="Presentacion\frmEstatusExamenOcupacional.aspx" />
+    <Content Include="Presentacion\frmFileDownload.aspx" />
+    <Content Include="Presentacion\frmInicio.aspx" />
+    <Content Include="Presentacion\frmPsicoSensometrico.aspx" />
+    <Content Include="Scripts\bluebird.min.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\swalert.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\ConsultaAD.cs" />
+    <Compile Include="Negocio\ControladorLogica.cs" />
+    <Compile Include="Negocio\EnvioCorreo.cs" />
+    <Compile Include="Persistencia\Conexion.cs" />
+    <Compile Include="Persistencia\Persistencia.cs" />
+    <Compile Include="Presentacion\frmAntecedentes_Trabajador.aspx.cs">
+      <DependentUpon>frmAntecedentes_Trabajador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmAntecedentes_Trabajador.aspx.designer.cs">
+      <DependentUpon>frmAntecedentes_Trabajador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmEstatusExamenOcupacional.aspx.cs">
+      <DependentUpon>frmEstatusExamenOcupacional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmEstatusExamenOcupacional.aspx.designer.cs">
+      <DependentUpon>frmEstatusExamenOcupacional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmFileDownload.aspx.cs">
+      <DependentUpon>frmFileDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmFileDownload.aspx.designer.cs">
+      <DependentUpon>frmFileDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmInicio.aspx.cs">
+      <DependentUpon>frmInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmInicio.aspx.designer.cs">
+      <DependentUpon>frmInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmPsicoSensometrico.aspx.cs">
+      <DependentUpon>frmPsicoSensometrico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmPsicoSensometrico.aspx.designer.cs">
+      <DependentUpon>frmPsicoSensometrico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master.Master" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documentos\" />
+    <Folder Include="Log\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51881</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51881/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

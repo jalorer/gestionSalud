@@ -1,0 +1,24 @@
+﻿body {
+}
+
+.CompletionList {
+    font-family: Calibri;
+    color: #333F48;
+    font-size: calc(0.1em + 0.65vw);
+    background: white;
+    border: 0.01vw solid #333F48;
+    border-radius: 0.2vw;
+    outline: none;
+    overflow: auto;
+    margin: 0;
+    padding: 0.05vw;
+}
+
+.ListItem {
+    color: #333F48;
+}
+
+.ItemHighlighted {
+    background-color: rgba(51, 63, 72, 0.15);
+    color: #333F48 !important;
+}

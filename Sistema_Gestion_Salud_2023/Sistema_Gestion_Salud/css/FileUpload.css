@@ -1,0 +1,189 @@
+﻿body {
+}
+
+.ajax__fileupload {
+    padding: 0.29vw;
+    border: #D3D3D3 1px solid;
+    overflow: auto;
+    font-family: Calibri !important;
+    font-size: calc(0.1em + 0.7vw) !important;
+    width: 97%;
+    /*height: 13vh;*/
+    border-radius: 0.3vw;
+    color: #5A6670;
+}
+
+.ajax__fileupload_selectFileContainer {
+    /*height: 13vh !important;*/
+    line-height: 1.25vw;
+    width: 7.8vw !important;
+}
+
+.ajax__fileupload_selectFileButton {
+    color:white!important;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+    /*padding: 0.3em 1.2em;*/
+    /*border: 1px solid #318aac;*/
+    /*transition: all 1s ease;*/
+    width: 10vw !important;
+    text-align:left !important;
+    top: 0px;
+    /*left: 1px;*/
+    /*background: #FF5100;*/
+    font-weight: bold;
+}
+
+    .ajax__fileupload_selectFileButton:hover {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+.ajax__fileupload_topFileStatus {
+    color: rgb(127, 126, 126);
+}
+
+.ajax__fileupload_ProgressBarHolder {
+    margin-right: 70px;
+    _margin-right: 0;
+}
+
+/*.ajax__fileupload_uploadbutton {
+    width: 100px !important;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #FEFFF0 !important;
+    color: black !important;
+    background-image: url('./Images/Upload.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: left !important;
+}*/
+
+.ajax_fileupload_cancelbutton {
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: #FEFFF0 !important;
+}
+
+.ajax__fileupload_dropzone {
+    border-style: dotted;
+    border-width: 1px;
+    line-height: 50px;
+    text-align: center;
+    _text-align: left; /* IE Only */
+    margin-bottom: 2px;
+    height: 10vh !important;
+}
+
+.ajax__fileupload_queueContainer {
+    border: #A9A9A9 1px solid;
+    border-width: 1px;
+    margin-top: 2px;
+    padding: 4px;
+    clear: both;
+}
+
+.ajax__fileupload_progressBar {
+    padding-left: 4px;
+    background-color: #FEFFF0 !important;
+    background-image: url('./Images/Progress.gif') !important;
+    background-repeat: no-repeat !important;
+    background-position: left !important;
+}
+
+.ajax__fileupload_footer {
+    margin-top: 2px;
+    line-height: 20px;
+    height: 20px;
+}
+
+.ajax__fileupload_fileItemInfo {
+    /*line-height: 20px;*/
+    height: 1vh;
+    margin-bottom: 2px;
+    overflow: hidden;
+    color: rgb(127, 126, 126) !important
+}
+
+    .ajax__fileupload_fileItemInfo .filename {
+        font-weight: bold;
+    }
+
+    .ajax__fileupload_fileItemInfo .uploadstatus {
+        font-style: italic;
+    }
+
+    .ajax__fileupload_fileItemInfo .removeButton {
+        cursor: pointer;
+        background-color: #FEFFF0 !important;
+        color: white !important;
+        width: 100px !important;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        display: block;
+        float: right !important;
+        background-image: url('./Images/Trash.png') !important;
+        background-repeat: no-repeat !important;
+        background-position: left !important;
+    }
+
+    .ajax__fileupload_fileItemInfo .uploadedState {
+        color: rgb(127, 126, 126) !important;
+        background-color: #fff;
+    }
+
+    .ajax__fileupload_fileItemInfo .uploadingState {
+        color: rgb(127, 126, 126) !important;
+        background-color: #fff;
+    }
+
+    .ajax__fileupload_fileItemInfo .pendingState {
+        color: rgb(127, 126, 126) !important;
+        background-color: #fff;
+    }
+
+    .ajax__fileupload_fileItemInfo .errorState {
+        color: #ffffff;
+        background-color: #ff0000;
+    }
+
+    .ajax__fileupload_fileItemInfo .cancelledState {
+        color: #900;
+        background-color: #fff;
+    }
+
+/*Check*/
+.ajax__fileupload_selectFileContainer {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 80px;
+    /*float: left;*/
+}
+
+    .ajax__fileupload_selectFileContainer input {
+        border: medium none;
+        cursor: pointer;
+        height: 40px;
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+.ajax__fileupload_fileItemInfo {
+    position: relative;
+    z-index: 0;
+}
+
+    .ajax__fileupload_fileItemInfo div.removeButton {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }

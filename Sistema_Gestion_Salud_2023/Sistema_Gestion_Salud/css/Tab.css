@@ -1,0 +1,15 @@
+﻿body {
+}
+
+    .Tab .ajax__tab_active .ajax__tab_tab, .Tab .ajax__tab_hover .ajax__tab_tab, .Tab .ajax__tab_header .ajax__tab_tab {
+        color: #333F48;
+        font-family: Calibri;
+        font-size: calc(0.1em + 0.65vw);
+    }
+
+    .Tab .ajax__tab_active {
+        font-weight: bold;
+    }
+
+
+ 

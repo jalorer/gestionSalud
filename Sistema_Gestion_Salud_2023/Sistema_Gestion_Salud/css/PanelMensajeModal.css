@@ -1,0 +1,146 @@
+﻿body {
+}
+
+
+.Background {
+    background-color: Gray;
+    filter: alpha(opacity=50);
+    opacity: 0.8;
+}
+
+
+.PanelMensaje {
+    border-radius: 1vw;
+    box-shadow: 0.3vw 0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.5);
+    border-top: solid rgba(90, 102, 112, 0.2) 0.1vw;
+    border-left: solid rgba(90, 102, 112, 0.2) 0.1vw;
+    background-color: white !important;
+    width: 25%;
+}
+
+.TablaMensaje {
+    width: 100%;
+    border: none !important;
+}
+
+.ColumnaMensaje {
+    width: 5%;
+    border: none !important;
+}
+
+.FilaVaciaMensaje {
+    height: 0.5vh;
+    border: none !important;
+}
+
+.FilaVaciaMensaje2 {
+    height: 1vh;
+    border: none !important;
+}
+
+.Centro {
+    text-align: center;
+    border: none !important;
+    width: 90%;
+}
+
+.LabelTituloMensaje {
+    color: #333F48;
+    font-size: calc(0.7em + 0.9vw);
+    font-weight: bold;
+    font-family: Calibri;
+    font-style: oblique;
+}
+
+
+.LabelMensaje {
+    color: #333F48;
+    font-size: calc(0.1em + 0.7vw);
+    font-weight: bold;
+    font-family: Calibri;
+    /*font-style: oblique;*/
+}
+
+.Derecha {
+    text-align: right;
+    border: none !important;
+}
+
+.Izquierda {
+    text-align: left;
+    border: none !important;
+}
+
+.BotonMensaje {
+    cursor: pointer;
+    color: #333F48 !important;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+    padding: 0.3em 1.2em;
+    border: 0.05vw solid rgba(51, 63, 72, 0.4);
+    transition: all 1s ease;
+    width: 7vw;
+    background-color: rgba(51, 63, 72, 0.15);
+    border-radius: 0.2vw;
+}
+
+    .BotonMensaje:hover {
+        border-radius: 0.3vw;
+        color: white !important;
+        background: rgba(51, 63, 72, 0.4);
+        font-weight: bold;
+    }
+
+.PanelGrande {
+    width: 70%;
+    background-color: white !important;
+    border-radius: 0.5vw;
+}
+
+.tablaPanelGrande {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.colTablaPanelGrande {
+    /*width: 1vw;*/
+    width: 1%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.columnaGrande {
+    width: 24%;
+}
+
+.PanelMediano {
+    width: 50%;
+    background-color: white !important;
+    border-radius: 0.5vw;
+}
+
+.tablaPanelMediano {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.colTablaPanelMediano {
+    /*width: 1vw;*/
+    width: 1%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.columnaMediano {
+    width: 50%;
+}

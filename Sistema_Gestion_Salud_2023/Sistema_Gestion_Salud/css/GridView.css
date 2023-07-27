@@ -1,0 +1,204 @@
+﻿body {
+}
+
+.GridView {
+    background-color: white;
+    border: 0.05vw solid rgba(51, 63, 72, 0.4);
+    width: 100%;
+}
+
+    .GridView td {
+        border: 0.05vw solid rgba(51, 63, 72, 0.4);
+        padding-left: 0.2vw;
+    }
+
+    .GridView th {
+        border: 0.05vw solid rgba(51, 63, 72, 0.4);
+    }
+
+.TituloResultados {
+    color: #333F48;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+    font-weight: 400;
+    background-color: rgba(51, 63, 72, 0.1);
+}
+
+    .TituloResultados th a {
+        color: #333F48;
+    }
+
+
+.FilaAlternaResultados {
+    color: #333F48;
+    font-family: Calibri;
+    font-size: calc(0.2em + 0.6vw);
+}
+
+.FilaResultados {
+    color: #333F48;
+    font-family: Calibri;
+    font-size: calc(0.2em + 0.6vw);
+}
+
+    .FilaResultados:hover {
+        color: #333F48;
+        background-color: rgba(51, 63, 72, 0.15);
+    }
+
+.FilaAlternaResultados:hover {
+    color: #333F48;
+    background-color: rgba(51, 63, 72, 0.15);
+}
+
+.BotonGrid {
+    cursor: pointer;
+    color: #333F48 !important;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.6vw);
+    padding: 0.3em 1.2em;
+    border: 0.05vw solid rgba(51, 63, 72, 0.4);
+    transition: all 1s ease;
+    width: 8vw;
+    background-color: rgba(51, 63, 72, 0.15);
+    border-radius: 0.2vw;
+}
+
+    .BotonGrid:hover {
+        border-radius: 0.3vw;
+        color: white !important;
+        background: rgba(51, 63, 72, 0.4);
+        font-weight: bold;
+    }
+
+.Icono {
+    text-align: center;
+}
+
+/*.Paginacion {
+    color: white;
+    background-color: rgba(255,81,0,0.6);
+    font-family: Calibri;
+    font-size: calc(0.2em + 0.7vw);
+    font-weight: bold;
+}
+
+    .Paginacion a {
+        color: White;
+        margin: auto 1%;
+        background-color: #FE5000;
+        padding: 0.2vw 0.3vw 0.2vw 0.3vw;
+        text-decoration: none;
+        box-shadow: 0.08vw 0.08vw 0.08vw #111;
+    }*/
+body {
+}
+
+.GridView {
+    background-color: white;
+    border: 0.05vw solid rgba(51, 63, 72, 0.4);
+    width: 100%;
+}
+
+    .GridView td {
+        border: 0.05vw solid rgba(51, 63, 72, 0.4);
+        padding-left: 0.2vw;
+    }
+
+    .GridView th {
+        border: 0.05vw solid rgba(51, 63, 72, 0.4);
+    }
+
+.TituloResultados {
+    color: #333F48;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+    font-weight: 400;
+    background-color: rgba(51, 63, 72, 0.1);
+}
+
+    .TituloResultados th a {
+        color: #333F48;
+    }
+
+
+.FilaAlternaResultados {
+    color: #333F48;
+    font-family: Calibri;
+    font-size: calc(0.2em + 0.6vw);
+}
+
+.FilaResultados {
+    color: #333F48;
+    font-family: Calibri;
+    font-size: calc(0.2em + 0.6vw);
+}
+
+    .FilaResultados:hover {
+        color: #333F48;
+        background-color: rgba(51, 63, 72, 0.15);
+    }
+
+.FilaAlternaResultados:hover {
+    color: #333F48;
+    background-color: rgba(51, 63, 72, 0.15);
+}
+
+.BotonGrid {
+    cursor: pointer;
+    color: #333F48 !important;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.6vw);
+    padding: 0.3em 1.2em;
+    border: 0.05vw solid rgba(51, 63, 72, 0.4);
+    transition: all 1s ease;
+    width: 8vw;
+    background-color: rgba(51, 63, 72, 0.15);
+    border-radius: 0.2vw;
+}
+
+    .BotonGrid:hover {
+        border-radius: 0.3vw;
+        color: white !important;
+        background: rgba(51, 63, 72, 0.4);
+        font-weight: bold;
+    }
+
+.Icono {
+    text-align: center;
+    width: 2%;
+}
+
+.ImagenGrid {
+    width: 1.5vw;
+    /*height: 1.8vh;*/
+}
+
+.Paginacion {
+    background-color: rgba(51, 63, 72, 0.1);
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+    font-weight: bold;
+    border: none;
+}
+
+    .Paginacion table td {
+        border: none;
+    }
+
+    .Paginacion a {
+        color: #333F48;
+        background-color: rgba(51, 63, 72, 0.1);
+        padding: 0.1vw 0.3vw 0.1vw 0.3vw;
+        text-decoration: none;
+        box-shadow: 0.08vw 0.08vw 0.08vw #111;
+    }
+
+    .Paginacion span {
+        color: #333F48;
+        padding: 0.2vw 0.3vw 0.2vw 0.3vw;
+    }
+
+    .Paginacion a:hover {
+        background-color: rgba(51, 63, 72, 0.2);
+    }

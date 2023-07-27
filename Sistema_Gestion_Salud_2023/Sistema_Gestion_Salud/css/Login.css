@@ -1,0 +1,126 @@
+﻿body {
+    background: #FE5000 url(../imagenes/Login.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.TablaPrincipal {
+    width: 100%;
+}
+
+.Fila {
+    min-height: 30vh;
+    height: 30vh;
+    max-height: 30vh;
+}
+
+.Columna {
+    width: 50%;
+}
+
+.TablaSecundaria {
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.ColumnaSecundaria {
+    width: 20%;
+}
+
+.ColumnaCentralSecundaria {
+    width: 60%;
+}
+
+.TablaLogin {
+    width: 100%;
+}
+
+.ColumnaLogin {
+    width: 30%;
+}
+
+.FilaVacia {
+    height: 0.5vh;
+}
+
+.FilaVacia2 {
+    height: 1vh;
+}
+
+.Centro {
+    text-align: center;
+}
+
+.LabelTitulo {
+    color: #333F48 /*#FE5000*/;
+    font-size: calc(0.7em + 1vw);
+    font-weight: bold;
+    font-family: Calibri;
+    /*text-decoration: underline;*/
+    font-style: oblique;
+}
+
+
+
+
+
+.Izquierda {
+    text-align: left;
+}
+
+.Falla {
+    color: #333F48;
+    font-size: calc(0.1em + 0.9vw);
+    font-weight: bold;
+}
+
+.LabelLogin {
+    color: #333F48 /*#FE5000*/;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.9vw);
+    font-weight: bold;
+}
+
+.CajaTextoLogin {
+    font-family: Calibri;
+    color: #333F48;
+    width: 18vw;
+    font-size: calc(0.1em + 0.8vw);
+    background: white;
+    border: 0.01vw solid rgba(221, 221, 221, 1);
+    border-radius: 0.25vw;
+    box-shadow: 0 0 0.2vw rgba(221, 221, 221, 0.8) inset;
+    outline: none;
+    height: 3vh;
+}
+
+
+.BotonLogin {
+    color: white !important;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.75vw);
+    border: 0.05vw solid #FE5000;
+    transition: all 1s ease;
+    width: 16.5vh;
+    height: 4vh;
+    min-height: 4vh;
+    max-height: 4vh;
+    background-color: #FE5000;
+    font-weight: bold;
+    border-radius: 0.2vw;
+}
+
+    .BotonLogin:hover {
+        background-color: rgba(255,81,0,0.6);
+        color: white !important;
+    }
+
+.Panel {
+    border-radius: 1vw;
+    box-shadow: 0.3vw 0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.5);
+    border-top: solid rgba(90, 102, 112, 0.2) 0.1vw;
+    border-left: solid rgba(90, 102, 112, 0.2) 0.1vw;
+    background-color: white;
+}

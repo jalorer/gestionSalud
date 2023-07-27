@@ -1,0 +1,452 @@
+﻿body {
+}
+
+.tablaPrincipal {
+    width: 100%;
+    /*height: 80%;*/
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-collapse: collapse;
+}
+
+.colTablaPrincipal {
+    border-collapse: collapse;
+    border: none;
+}
+
+.colTablaPrincipalF {
+    border-collapse: collapse;
+    border: none;
+}
+
+.colCentroTablaPrincipal {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.PanelPrimario {
+    width: 100%;
+    /*height: 100%;*/
+    border-radius: 0.5vw;
+}
+
+.tablaPanelPrimario {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.colTablaPanelPrimario {
+    /*width: 1vw;*/
+    width: 1%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.columnaPrimario {
+    width: 24%;
+}
+
+.filaFinal {
+    height: 0.5vh;
+}
+
+.borde {
+    border-left: solid 0.07vw;
+    border-left-color: #DDD;
+}
+
+.bordeBajo {
+    border-bottom: solid 0.02vw;
+    border-bottom-color: #333F48;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+.bordeBajoGris {
+    border-bottom: solid 0.02vw;
+    border-bottom-color: #DDD;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+.filaTitulo {
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.8vw);
+    color: white;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.divColorUno {
+    background: #FE5000 /*#ff671d*/;
+    height: 3.5vh;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    width: 100%;
+}
+
+.divColorDos {
+    background: #ff671d;
+    height: 1.5vh;
+    opacity: 0.7;
+    width: 100%;
+}
+
+.divColorTres {
+    background: #ff671d;
+    height: 3.5vh;
+    opacity: 0.9;
+    text-align: center;
+    font-size: calc(0.3em + 0.8vw) !important;
+}
+
+.divColorCuatro {
+    background: #ff671d;
+    height: 1.5vh;
+}
+
+.Label {
+    color: #333F48;
+    font-size: calc(0.1em + 0.7vw);
+    font-family: Calibri;
+    font-weight: bolder;
+}
+
+.LabelField {
+    color: red;
+    font-size: calc(0.5em + 0.7vw);
+    font-family: Calibri;
+    font-weight: bolder;
+}
+
+.ToolTip {
+    background-color: #f0f0f0;
+    height: 3vh;
+    border-radius: 0.3vw;
+    color: #333F48;
+    padding: 0.5vw;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: calc(0.1em + 0.7vw);
+    text-align: center;
+    border: 0.05vw solid rgba(51, 63, 72, 0.4);
+}
+
+.CajaTextoPrincipal {
+    text-align:center;
+    font-family: Calibri;
+    color: #333F48;
+    width: 80%;
+    font-size: calc(0.1em + 0.7vw);
+    background: white;
+    border: 0.01vw solid rgba(221, 221, 221, 1);
+    border-radius: 0.2vw;
+    box-shadow: 0 0 0.2vw rgba(221, 221, 221, 0.8) inset;
+    outline: none;
+    height: 3vh;
+
+}
+
+.CajaTexto {
+    text-align: center;
+    font-family: Calibri;
+    color: #333F48;
+    width: 98%;
+    font-size: calc(0.1em + 0.7vw);
+    background: white;
+    border: 0.01vw solid rgba(221, 221, 221, 1);
+    border-radius: 0.2vw;
+    box-shadow: 0 0 0.2vw rgba(221, 221, 221, 0.8) inset;
+    outline: none;
+    height: 3vh;
+}
+
+
+.cssButton{
+    vertical-align:middle;
+    height:3vh;
+   
+}
+
+
+.CajaMultiline {
+    font-family: Calibri;
+    color: #333F48;
+    width: 99%;
+    font-size: calc(0.1em + 0.7vw);
+    background: white;
+    border: 0.01vw solid rgba(221, 221, 221, 1);
+    border-radius: 0.2vw;
+    box-shadow: 0 0 0.2vw rgba(221, 221, 221, 0.8) inset;
+    outline: none;
+    height: 13vh;
+    resize: none;
+}
+
+.containerClass .ajax__html_editor_extender_container {
+    width: 98% !important;
+}
+
+/*.Multiline {
+    font-family: Calibri;
+    color: #333F48;
+    width: 98%;
+    font-size: calc(0.1em + 0.7vw);
+    background: white;
+    border: 0.01vw solid rgba(221, 221, 221, 1);
+    border-radius: 0.2vw;
+    box-shadow: 0 0 0.2vw rgba(221, 221, 221, 0.8) inset;
+    outline: none;
+    height: 13vh;
+}*/
+
+.tdBotonera {
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+/*.tdBotoneraFinal {
+   background-color: #ff671d;
+    border-bottom-left-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw;
+}*/
+
+.filaBotonera {
+    margin: 0;
+    border-top: solid 0.04vw #DDD;
+}
+
+.Boton {
+    cursor: pointer;
+    color: #333F48 !important;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+    padding: 0.3em 1.2em;
+    border: 0.05vw solid rgba(51, 63, 72, 0.4);
+    transition: all 1s ease;
+    width: 9vw;
+    background-color: rgba(51, 63, 72, 0.15);
+    border-radius: 0.2vw;
+}
+
+    .Boton:hover {
+        border-radius: 0.3vw;
+        color: white !important;
+        background: rgba(51, 63, 72, 0.4);
+        font-weight: bold;
+    }
+
+.BotonNuevo {
+    /*cursor: pointer;*/
+    color: #333F48 !important;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+    padding: 0.3em 1.2em;
+    border: 0.05vw solid #FF5100;
+    transition: all 1s ease;
+    width: 9vw;
+    background-color: #FFC600;
+    border-radius: 0.2vw;
+    height: 6vh;
+    font-weight: bold;
+}
+
+    .BotonNuevo:hover {
+        filter: brightness(90%);
+    }
+
+
+.BotonEnProceso {
+    /*cursor: pointer;*/
+    color: #333F48 !important;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+    padding: 0.3em 1.2em;
+    border: 0.05vw solid #FF5100;
+    transition: all 1s ease;
+    width: 9vw;
+    background-color: #FFC600;
+    border-radius: 0.2vw;
+    height: 6vh;
+    font-weight: bold;
+    background-color: lightcoral;
+}
+
+    .BotonEnProceso:hover {
+        filter: brightness(90%);
+    }
+
+.BotonCerradas {
+    /*cursor: pointer;*/
+    color: #333F48 !important;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+    padding: 0.3em 1.2em;
+    border: 0.05vw solid #FF5100;
+    transition: all 1s ease;
+    width: 9vw;
+    background-color: #FFC600;
+    border-radius: 0.2vw;
+    height: 6vh;
+    font-weight: bold;
+    background-color: #6CC24A;
+}
+
+    .BotonCerradas:hover {
+        filter: brightness(90%);
+    }
+
+.BotonInicio2 {
+    color: black !important;
+    font-family: calibri;
+    font-size: 25pt;
+    padding: 40px;
+    border: 2px solid #FF5100;
+    transition: all 1s ease;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*font-weight: 800;*/
+    width: 380px;
+    background-color: #FFEADF;
+}
+.BotonInicio {
+    cursor: pointer;
+    color: #333F48 !important;
+    font-family: Calibri;
+    font-size: calc(0.5em + 0.7vw);
+    padding: 0.3em 1.2em;
+    border: 0.05vw solid rgba(51, 63, 72, 0.4);
+    transition: all 1s ease;
+    width: 98%;
+    background-color: rgba(51, 63, 72, 0.15);
+    border-radius: 0.2vw;
+    height: 9vw;
+}
+
+    .BotonInicio:hover {
+        border-radius: 0.3vw;
+        color: white !important;
+        background: rgba(51, 63, 72, 0.4);
+        font-weight: bold;
+    }
+
+.BotonVolver {
+    color: white !important;
+    font-family: Calibri;
+    cursor: pointer;
+    font-size: calc(0.1em + 0.7vw);
+    padding: 0.3em 1.2em;
+    border: 0.05vw solid white;
+    transition: all 1s ease;
+    width: 10vw;
+    background-color: #FF5100; /*rgba(51, 63, 72, 0.4)*/
+    border-radius: 0.2vw;
+    font-weight:bold;
+}
+
+    .BotonVolver:hover {
+        border-radius: 0.3vw;
+        color: white !important;
+        background: rgba(51, 63, 72, 0.4);
+        font-weight: bold;
+    }
+
+.Combo {
+    color: #333F48;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+    width: 98%;
+    padding: 5px 10px;
+    border: 0.01vw solid rgba(221, 221, 221, 1);
+    border-radius: 0.2vw;
+    box-shadow: 0 0 0.2vw rgba(221, 221, 221, 0.8) inset;
+    outline: none;
+    background-color: transparent;
+}
+
+.ColumnaOculta {
+    display: none;
+}
+
+
+/*.ComboAjax {
+    color: #333F48;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+ 
+}*/
+
+.ComboAjax .ajax__combobox_inputcontainer .ajax__combobox_textboxcontainer input {
+    padding: 5px 10px;
+    border: 0.01vw solid rgba(221, 221, 221, 1);
+    border-radius: 0.2vw;
+    box-shadow: 0 0 0.2vw rgba(221, 221, 221, 0.8) inset;
+    outline: none;
+    background-color: transparent;
+    font-size: calc(0.1em + 0.7vw);
+    color: #333F48;
+    font-family: Calibri;
+}
+
+.ComboAjax .ajax__combobox_inputcontainer .ajax__combobox_buttoncontainer button {
+    /*padding: 5px 10px;
+    border: 0.01vw solid rgba(221, 221, 221, 1);
+    border-radius: 0.2vw;
+    box-shadow: 0 0 0.2vw rgba(221, 221, 221, 0.8) inset;
+    outline: none;*/
+    background-color: transparent;
+    background-image: url("../imagenes/Combo.PNG");
+    /*background-position: top left;*/
+    /*height: 21px;
+    width: 21px;*/
+}
+
+.ComboAjax .ajax__combobox_itemlist {
+    /*border-color: #7F9DB9;*/
+    color: #333F48;
+    font-family: Calibri;
+    padding: 5px 10px;
+    border: 0.01vw solid rgba(221, 221, 221, 1);
+    border-radius: 0.2vw;
+    box-shadow: 0 0 0.2vw rgba(221, 221, 221, 0.8) inset;
+    outline: none;
+    background-color: transparent;
+}
+
+
+
+
+
+
+/*.tdBotoneraBusqueda {
+   background-color: rgba(255,103,29,0.8);
+}*/
+
+/*.BotonBusqueda {
+    cursor: pointer;
+    color: white !important;
+    font-family: Calibri;
+    font-size: calc(0.1em + 0.7vw);
+    padding: 0.3em 1.2em;
+    border: 1.5px solid #FE5000;
+    transition: all 1s ease;
+    width: 9vw;
+    top: 0px;
+    left: 1px;
+    font-weight: bolder;
+    background-color: #FFEADF;
+}
+
+    .BotonBusqueda:hover {
+       
+        border-radius: 0.3vw;
+        color: white;
+        background: #FE5000;
+    }*/
